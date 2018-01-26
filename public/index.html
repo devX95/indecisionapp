@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Students</title>
+        <link rel="stylesheet", href="/css/styles.css"> 
+    </head>
+    <body>
+        <div id="web-app">
+            <div id="header">
+                <h1>Students Database</h1>
+                <p>Gibran Gul, Abdul Hannan, Jawad Farooq</p>
+            </div>
+            <div id="options">
+                <input id="search-bar" placeholder="Search Students"/>
+                <div id="button-container">
+                    <button id="add-student">ADD STUDENT</button>
+                    <button id="view-students">ALL STUDENTS</button>
+                </div>
+            </div>
+            <div id="container">
+                <div id="form"> 
+                    <input name="name" type="text" placeholder="Name" autofocus autocomplete="off" id="nameField"/><br>
+                    <input name="email" type="text" placeholder="Email" autocomplete="off" id="emailField"/><br>
+                    <input name="city" type="text" placeholder="City" autocomplete="off" id="cityField"/><br>
+                    <input name="age" type="text" placeholder="Age" autocomplete="off"id="ageField"/><br>
+
+                    <input type="radio" name="gender" value="male" checked id="maleButton"><p>Male</p>
+                    <input type="radio" name="gender" value="female" id="femaleButton"><p>Female</p><br>
+
+                    <input name="faculty" type="text" placeholder="Faculty" autocomplete="off" id="facultyField"/><br>
+                    <button id="saveButton">SAVE</button>
+                </div>
+            </div>
+
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/lib/jquery-3.2.1.min.js"></script>
+        <script src="/js/index.js"></script>
+        <script src="/js/lib/deparam.js"></script>
+
+    </body>
+</html>
